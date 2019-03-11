@@ -36,6 +36,7 @@ public class PictureController {
             FastDFSClient fastDFSClient = new FastDFSClient("classpath:conf/client.conf");
             //3、执行上传处理
             String path = fastDFSClient.uploadFile(uploadFile.getBytes(), extName);
+            //判断上传图片存放在哪个group
             if(path.contains("group2")){
                 IMAGE_SERVER_URL_GROUP1 = IMAGE_SERVER_URL_GROUP2;
             }
