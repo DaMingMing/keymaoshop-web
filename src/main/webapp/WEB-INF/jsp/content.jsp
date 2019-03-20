@@ -99,7 +99,9 @@ var contentListToolbar = [{
         				$.messager.alert('提示','删除内容成功!',undefined,function(){
         					$("#contentList").datagrid("reload");
         				});
-        			}
+        			}else{
+                        $.messager.alert('提示','删除内容失败!');
+                    }
         		});
     	    }
     	});
