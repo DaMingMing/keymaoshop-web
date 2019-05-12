@@ -23,6 +23,7 @@
 	<dubbo:reference interface="com.keymao.service.ItemCatService" id="itemCatService"/>
 	<dubbo:reference interface="com.keymao.content.service.ContentCategoryService" id="contentCategoryService"/>
 	<dubbo:reference interface="com.keymao.content.service.ContentService" id="contentService"/>
+	<dubbo:reference interface="com.keymao.search.service.SearchItemService" id="searchItemServic"/>
 
 	<context:component-scan base-package="com.keymao.controller" />
 
